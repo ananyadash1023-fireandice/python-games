@@ -20,3 +20,16 @@ python etl_memory_match.py
 
 Replace `etl_memory_match.py` with `flames.py` or `tic_tac_toe.py` to play another
 game. These are desktop apps and require a graphical desktop session.
+
+## Create the ETL game intro video
+
+On Windows, install the video-rendering dependencies and run the generator:
+
+```powershell
+python -m pip install -r requirements-video.txt
+python create_etl_video.py
+```
+
+The script creates `etl_memory_match_intro.mp4` with animated illustrations and
+narration from Windows' built-in speech voices. It renders locally and does not
+send project files to an online video service.
